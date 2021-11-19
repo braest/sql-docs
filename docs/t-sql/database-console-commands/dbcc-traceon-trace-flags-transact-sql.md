@@ -50,6 +50,10 @@ The following table lists and describes the trace flags that are available in [!
 > [!NOTE]
 > Azure SQL Managed Instance supports the following global Trace Flags: 460, 2301, 2389, 2390, 2453, 2467, 7471, 8207, 9389, 10316, and 11024. Session trace-flags are not yet supported in Managed Instance.
  
+ Tim : ** Traceflag 460 is not working on SQL Server 2017 RTM-CU26 (14.0.3411.3 X64).
+ Tim : When enabling it with dbcc traceon (460,-1) ; it keeps on coming back with message 8152 instead of 2628.
+ 
+ 
 > [!NOTE]
 > Some trace flags were introduced in specific [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] versions. For more information on the applicable version, see the Microsoft Support article associated with a specific trace flag.
 
